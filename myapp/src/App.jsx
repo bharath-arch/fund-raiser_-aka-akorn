@@ -39,7 +39,7 @@ function App() {
         
 
         <Route path="/user" element={<Layout_user />}>
-        <Route index element={<Explore />} />
+        <Route path="" element={<Explore />} />
           <Route path="explore" element={<Explore />} />
           <Route path="id" element={<Id />} />
           <Route path="wealth" element={<Wealth />} />

@@ -10,8 +10,10 @@ function Layout() {
   return (
     <div className="">
       <div className="flex justify-between text-center items-center ml-8 mr-8 mt-3">
-      <div className="">
-          <span className="font-bold text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akron</span>
+        <div className="">
+          <span className="font-bold text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            Akron
+          </span>
         </div>
         <div className="">
           <ul className="flex gap-5 font-semibold text-xl">
@@ -69,8 +71,10 @@ function Layout() {
           </Link>
         </div>
       </div>
-      <div className="w-full">
-        <Outlet />
+      <div className="flex flex-col min-h-screen">
+        <div className="w-full">
+          <Outlet />
+        </div>
       </div>
       <footer className="bg-zinc-50 text-center dark:bg-neutral-700 lg:text-left">
         <div className="bg-black/5 p-4 text-center text-surface dark:text-white">

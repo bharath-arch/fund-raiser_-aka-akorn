@@ -5,10 +5,10 @@ import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 // import Helmet from 'react-helmet';
 function Login() {
-  setBodyColor({ color: "gray" });
+  setBodyColor({ color: "lightgray" });
 
   return (
-    <div>
+    <div className="m-4">
       {/* <Helmet bodyAttributes={{style: 'background-color : #fff'}}/> */}
       <div className="">
           <span className="font-bold text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akron</span>
@@ -32,11 +32,11 @@ function Login() {
                 <span className="text-blue-800">Terms & Conditions</span> and{" "}
                 <span className="text-blue-800">Privacy Policy</span> Continue
               </p>
-              <div className="flex justify-center items-center  ">
-                <button className="mt-3 text-center border-2 rounded-lg w-[100%] p-2 font-arima bg-blue-600 text-white text-xl items-center">
-                 <Link to={"/verification"}>Continue </Link> 
+              <Link to={"/verification"}> <div className="flex justify-center items-center  ">
+              <button className="mt-3 text-center border-2 rounded-lg w-[100%] p-2 font-arima bg-blue-600 text-white text-xl items-center">
+                 Continue 
                 </button>
-              </div>
+              </div></Link> 
             </form>
 
             <div class="flex py-5 items-center">

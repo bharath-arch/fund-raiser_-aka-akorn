@@ -4,10 +4,10 @@ import setBodyColor from "../setBodyColor";
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
 function Verification() {
-  setBodyColor({ color: "gray" });
+  setBodyColor({ color: "lightgray" });
 
   return (
-    <div>
+    <div className="m-4">
       {/* <Helmet bodyAttributes={{style: 'background-color : #fff'}}/> */}
       <div className="">
           <span className="font-bold text-4xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">Akron</span>
