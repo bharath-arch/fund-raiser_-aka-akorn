@@ -24,7 +24,7 @@ function Login() {
             <form action="#">
               <input
                 type="text"
-                className=" border-2 rounded-lg w-[100%]  p-2"
+                className=" border-2 rounded-lg w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 placeholder="Email or Mobile number"
               />
               <p className="text-[0.75rem] mr-4 font-serif font-light mt-2">

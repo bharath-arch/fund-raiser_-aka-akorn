@@ -28,7 +28,7 @@ function Verification() {
               <div className="flex justify-center text-center items-center">
                 <input
                   type="text"
-                  className=" border-2 rounded-lg w-[15%]  p-2 "
+                  className=" border-2 rounded-lg w-[15%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
                 <input
                   type="text"
