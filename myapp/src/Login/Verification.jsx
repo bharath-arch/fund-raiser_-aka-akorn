@@ -32,19 +32,19 @@ function Verification() {
                 />
                 <input
                   type="text"
-                  className=" border-2 rounded-lg w-[15%] ml-2  p-2"
+                  className=" border-2 rounded-lg w-[15%] ml-2  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
                 <input
                   type="text"
-                  className=" border-2 rounded-lg w-[15%] ml-2  p-2"
+                  className=" border-2 rounded-lg w-[15%] ml-2  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
                 <input
                   type="text"
-                  className=" border-2 rounded-lg w-[15%]  ml-2 p-2"
+                  className=" border-2 rounded-lg w-[15%]  ml-2 p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
                 <input
                   type="text"
-                  className=" border-2 rounded-lg w-[15%] ml-2  p-2"
+                  className=" border-2 rounded-lg w-[15%] ml-2  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-blue-500"
                 />
               </div>
               <p className="text-[0.75rem] mr-4 font-serif font-light mt-2 flex justify-between">
