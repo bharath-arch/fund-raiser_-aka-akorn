@@ -19,6 +19,7 @@ import Wealth from "./User/Wealth";
 import Layout_user from "./User/Layout_user";
 import Square from "./User/Square";
 import Portfolio from "./User/Portfolio";
+import Sign_in from "./Sign_in/Sign_in";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -36,8 +37,9 @@ function App() {
 
         <Route path="/Login" element={<Login />} />
         <Route path="/verification" element={<Verification />} />
-        
+        <Route path="/sign_in" element={<Sign_in />} />
 
+        
         <Route path="/user" element={<Layout_user />}>
         <Route path="" element={<Explore />} />
           <Route path="explore" element={<Explore />} />

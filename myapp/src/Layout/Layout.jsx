@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import Logo from "../assets/logo.png";
 import setBodyColor from "../setBodyColor";
 
 function Layout() {
@@ -61,7 +60,7 @@ function Layout() {
         </div>
         <div className="flex gap-4 text-xl items-center">
           <p className="p-2">
-            <Link to={"/Login"}>Sign In</Link>
+            <Link to={"/sign_in"}>Sign In</Link>
           </p>
           <Link to={"/Login"}>
             {" "}
