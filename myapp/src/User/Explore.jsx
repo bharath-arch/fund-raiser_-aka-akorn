@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineFiberNew } from "react-icons/md";
 import { GoAlertFill } from "react-icons/go";
 import { TbMoneybag } from "react-icons/tb";
@@ -6,8 +6,10 @@ import { BsFillPeopleFill } from "react-icons/bs";
 import { FaWallet } from "react-icons/fa";
 import Add_money from "../Wallet/Add_money";
 
+
 function Explore() {
   return (
+
     <div className="ml-6 mr-6">
       <section>
         <div className="">
@@ -47,7 +49,7 @@ function Explore() {
 
             <div className="flex  pl-20 pr-20 items-center ">
               <p className=" mt- font-semibold text-xl">
-                Funds <span className="text-blue-700">$0</span>{" "}
+                Funds <span className="text-blue-700">&#8377;0</span>{" "}
               </p>
               <div className="pl-[42rem]">
                 <button className="p-3 text-xl rounded-md text-white bg-blue-700 font-arima items-end">
@@ -60,9 +62,11 @@ function Explore() {
             </div>
           </div>
         </div>
-        <div className="bg-white flex justify-center relative">
-          <span className="absolute top-[-10.75rem] "><Add_money /></span>
-          
+        {/* {toogleAdd_money? 'translate-x-0': 'translate-x-1'} */}
+        <div className="bg-white flex justify-center relative ">
+          <span className="absolute top-[-10.75rem] ">
+            <Add_money />
+          </span>
         </div>
       </section>
       <section>

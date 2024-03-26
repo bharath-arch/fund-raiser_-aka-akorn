@@ -20,6 +20,9 @@ import Layout_user from "./User/Layout_user";
 import Square from "./User/Square";
 import Portfolio from "./User/Portfolio";
 import Sign_in from "./Sign_in/Sign_in";
+import Profile from "./User/Profile";
+import Kyc from "./User/Kyc";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -38,6 +41,9 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/verification" element={<Verification />} />
         <Route path="/sign_in" element={<Sign_in />} />
+        <Route path="/user/profile" element={<Profile/>} />
+       <Route path="/user/kyc"element={<Kyc/>}></Route>
+        
 
         
         <Route path="/user" element={<Layout_user />}>
@@ -48,6 +54,7 @@ function App() {
           <Route path="square" element={<Square />} />
           <Route path="portfolio" element={<Portfolio />} />
         </Route>
+        
       </Routes>
     </BrowserRouter>
   );
