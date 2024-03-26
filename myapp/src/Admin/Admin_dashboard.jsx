@@ -11,7 +11,9 @@ function Admin_dashboard() {
               Akorn
             </span>
           </div>
-          <span>Logout</span>
+          <div className=" flex gap-5 items-center text-center ">
+          <span className="font-semibold text-xl">Manage User’s</span>
+          <span className="text-xl">Logout</span></div>
         </div>
       </div>
       <section className="flex gap-2 flex-col pt-10 pl-16">
