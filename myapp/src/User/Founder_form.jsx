@@ -1,15 +1,11 @@
 import React from "react";
 import toast from "react-hot-toast";
-import { Toaster } from "react-hot-toast";
+
 import { successToast, errorToast } from "../Toaster";
 
-function Kyc() {
-
-
-
+function Founder_form() {
   return (
-    <div> 
-       <Toaster position="top-center" reverseOrder={false} />
+    <div>
       <div className="">
         <div className="flex justify-between text-center items-center ml-8 mr-8 mt-3">
           <div className="">
@@ -17,13 +13,16 @@ function Kyc() {
               Akorn
             </span>
           </div>
-          <span>Logout</span>
+          <span>Login</span>
         </div>
       </div>
       <section className="pl-16 pt-10 pr-16">
         <div className="flex flex-col gap-4 ">
-          <span className="text-4xl font-semibold">KYC</span>
-          <span className="text-xl">Start your investment journey with us</span>
+          <span className="text-4xl font-semibold">Raise with US</span>
+          <span className="text-xl">
+            Tell us a little about your company. <br />
+            This will help us understand your business better.
+          </span>
           <div className="flex items-baseline">
             <span className="pr-1 text-sm text-gray-500">Application</span>
             <hr className="border-b-1 w-full border-gray-500" />
@@ -47,13 +46,30 @@ function Kyc() {
             placeholder="Email"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            LinkedIn URL (if any)
+            LinkedIn URL of Founder
           </label>
           <input
             type="url"
             className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             placeholder="Your Name"
           />
+          <label htmlFor="" className="font-semibold text-xl">
+            LinkedIn Page of the Company
+          </label>
+          <input
+            type="url"
+            className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            placeholder="Your Name"
+          />
+          <label htmlFor="" className="font-semibold text-xl">
+            Registered Company Name
+          </label>
+          <input
+            type="text"
+            className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            placeholder="Your Name"
+          />
+
           <label htmlFor="" className="font-semibold text-xl">
             Address
           </label>
@@ -70,58 +86,57 @@ function Kyc() {
             placeholder="PAN"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Aadhar
+            Website
           </label>
           <input
-            type="text"
+            type="url"
             className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             placeholder="Aadhar"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Contact Number
+            Describe your previous fundraising rounds
           </label>
-          <input
-            type="text"
+          <textarea
             className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             placeholder="Contact Number"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Whats app Number
+            Describe your product
           </label>
-          <input
-            type="text"
+          <textarea
             className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
-            placeholder="Whats app Number"
+            placeholder="Contact Number"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Describe about yourself
+            Describe the traction
           </label>
           <textarea
             className=" border-2 rounded-2xl w-[100%] h-auto p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             placeholder="Describe about yourself"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            What is your annual income
+            Describe the revenue you are making
+          </label>
+
+          <textarea
+            className=" border-2 rounded-2xl w-[100%] h-auto p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            placeholder="Describe about yourself"
+          />
+          <label htmlFor="" className="font-semibold text-xl">
+            How big is the team ?
           </label>
           <input
             type="text"
             className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
-            placeholder="annual income"
+            placeholder="How big is the team ?"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Bank account Number
+            Why do you want to raise a Community round ?
           </label>
-          <input
+          <textarea
             type="text"
-            className=" border-2 rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
-            placeholder="account Number"
-          />
-          <label htmlFor="" className="font-semibold text-xl">
-            Upload bank acc photo
-          </label>
-          <input
-            type="file"
             className=" border-2  border-dashed rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            placeholder="Why do you want to raise a Community round ?"
           />
           <label htmlFor="" className="font-semibold text-xl">
             From where you learn about us
@@ -149,7 +164,7 @@ function Kyc() {
             <label htmlFor="">No</label>
           </div>
           <label htmlFor="" className="font-semibold text-xl">
-            Upload your Image
+            Upload your Pitch
           </label>
           <input
             type="file"
@@ -157,18 +172,26 @@ function Kyc() {
             placeholder="Upload your Image"
           />
           <label htmlFor="" className="font-semibold text-xl">
-            Upload your ID proof
+            Upload your Financials
           </label>
           <input
             type="file"
             className=" border-2 border-dashed rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
             placeholder="Upload your ID proof"
           />
+          <label htmlFor="" className="font-semibold text-xl">
+            How much do you expect to raise with us ?
+          </label>
+          <input
+            type="text"
+            className=" border-2 border-dashed rounded-2xl w-[100%]  p-2  border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-500"
+            placeholder="Amount"
+          />
           <div className="flex justify-center mt-3 mb-3">
             <button
               className=" p-2 rounded-md w-24 bg-blue-600 border-none text-white hover:bg-blue-700  "
               onClick={() =>
-                successToast(
+                toast.success(
                   "Success! Your KYC application has been submitted."
                 )
               }
@@ -182,4 +205,4 @@ function Kyc() {
   );
 }
 
-export default Kyc;
+export default Founder_form;

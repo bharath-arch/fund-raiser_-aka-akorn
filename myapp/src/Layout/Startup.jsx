@@ -1,5 +1,6 @@
 import React from "react";
 import Sideimage from './Sideimage'
+import { Link  } from "react-router-dom";
 
 function Startup() {
   return (
@@ -13,9 +14,9 @@ function Startup() {
             A growing community of over 150,000 users are waiting to back your
             startup
           </p>
-          <button className="text-xl p-2 bg-blue-800 text-white rounded-lg mt-12">
+          <Link to="founder_form"><button className="text-xl p-2 bg-blue-800 text-white rounded-lg mt-12">
             Apply now
-          </button>
+          </button></Link>
         </div>
         <div className="flex-1">
           <Sideimage />

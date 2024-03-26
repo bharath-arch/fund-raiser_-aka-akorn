@@ -56,7 +56,7 @@ function Login() {
                 <span className="text-blue-800">Sign up instead</span>
               </p>
               <p>
-                <span className="text-blue-800">Login as Founder</span>
+               <Link to="sign_in"> <span className="text-blue-800">Signup as Founder</span></Link>
               </p>
             </div>
           </div>
